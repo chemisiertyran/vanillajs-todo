@@ -1,0 +1,67 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "mocha": true
+    },
+    "rules": {
+        "no-console": "warn",
+        "quotes": ["warn", "double"],
+        "semi": ["warn", "always"],
+        "block-scoped-var": "warn",
+        "complexity": ["warn", 2],
+        "consistent-return": "warn",
+        "curly": "warn",
+        "eqeqeq": "warn",
+        "no-caller": "warn",
+        "no-eval": "warn",
+        "no-extend-native": "warn",
+        "no-implicit-coercion": "error",
+        "no-invalid-this": "warn",
+        "no-magic-numbers": "warn",
+        "no-multi-spaces": "warn",
+        "no-param-reassign": "warn",
+        "no-unused-vars": "warn",
+        "radix": "warn",
+        "vars-on-top": "warn",
+        "no-useless-return": "warn",
+        "array-bracket-spacing": ["warn", "never"],
+        "block-spacing": "warn",
+        "camelcase": "warn",
+        "capitalized-comments": "warn",
+        "brace-style": "warn",
+        "func-style": ["warn", "declaration"],
+        "indent": ["warn", 4],
+        "line-comment-position": ["warn", {"position": "above" }],
+        "linebreak-style": ["warn", "unix"],
+        "max-depth": ["warn", 4],
+        "max-lines": ["warn", {"max": 300, "skipComments": true}],
+        "max-len": ["warn", 80],
+        "multiline-ternary": ["warn", "always"],
+        "max-params": ["warn", 3],
+        "max-statements": ["warn", 10],
+        "max-statements-per-line": ["warn", { "max": 1 }],
+        "new-cap": "warn",
+        "no-trailing-spaces": "warn",
+        "one-var": ["warn", "never"],
+        "require-jsdoc": ["warn", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": true,
+                "ArrowFunctionExpression": false
+            }
+        }],
+        "space-before-function-paren": ["warn", "never"],
+        "spaced-comment": ["warn", "always"]
+    }
+}
