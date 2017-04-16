@@ -1,13 +1,13 @@
 module.exports = {
-    init: function() {
-        this.initModel();
+    init: function(model) {
+        this.initModel(model);
         this.cacheDom();
         this.bindEvents();
         this.render();
     },
 
-    initModel: function() {
-        this.todos = ["First todo", "Second todo"];
+    initModel: function(todoModel) {
+        this.todoModel = todoModel;
     },
 
     cacheDom: function() {
@@ -22,7 +22,7 @@ module.exports = {
 
     render: function() {
         this.listEl.innerHTML = "";
-        this.todos.forEach(this.renderTodo.bind(this));
+        this.todoModel.getTodos().forEach(this.renderTodo.bind(this));
     },
 
     renderTodo: function(todoText) {
@@ -33,8 +33,7 @@ module.exports = {
 
     addTodo: function() {
         var todoText = this.inputEl.value;
-        this.todos.push(todoText);
-
+        this.todoModel.addTodo(todoText);
         this.render();
     }
 };

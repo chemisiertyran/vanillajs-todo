@@ -1,6 +1,4 @@
 module.exports = {
-    todos: [],
-
     init: function() {
         this.todos = [];
     },
