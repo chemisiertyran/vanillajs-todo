@@ -10,3 +10,8 @@ Bundle the JS files (bundle statically included in index.html)
 ```
 npm run build
 ```
+
+Execute the tests
+```
+npm run test
+```
