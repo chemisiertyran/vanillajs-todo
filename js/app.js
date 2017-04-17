@@ -1,5 +1,5 @@
-var model = require("./todolist.model");
-var view = require("./todolist.view");
+const model = require("./todolist.model");
+const view = require("./todolist.view");
 
-model.init()
+model.init();
 view.init(model);

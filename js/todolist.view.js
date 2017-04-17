@@ -27,21 +27,21 @@ module.exports = {
     },
 
     renderTodo: function(todoText) {
-        var todoEl = document.createElement("li");
+        let todoEl = document.createElement("li");
         todoEl.innerHTML = todoText;
         todoEl.appendChild(this.renderDeleteTodo());
         this.listEl.appendChild(todoEl);
     },
 
     renderDeleteTodo: function() {
-        var deleteTodo = document.createElement("button");
+        let deleteTodo = document.createElement("button");
         deleteTodo.className = "todolist-delete";
         deleteTodo.innerHTML = "Delete";
         return deleteTodo;
     },
 
     addTodo: function() {
-        var todoText = this.inputEl.value;
+        const todoText = this.inputEl.value;
         this.todoModel.addTodo(todoText);
         this.render();
     },

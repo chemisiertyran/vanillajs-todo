@@ -8,7 +8,7 @@ module.exports = {
     },
 
     removeTodo: function(todoText) {
-        var index = this.todos.indexOf(todoText);
+        let index = this.todos.indexOf(todoText);
         this.todos.splice(index, 1);
     },
 
