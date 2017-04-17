@@ -13,5 +13,5 @@ npm run build
 
 Execute the tests
 ```
-npm run test
+npm test
 ```

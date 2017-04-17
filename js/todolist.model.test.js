@@ -1,5 +1,5 @@
 var model = require("../js/todolist.model");
-var assert = require("assert");
+var assert = require("chai").assert;
 
 describe("todolist.model", function() {
 
